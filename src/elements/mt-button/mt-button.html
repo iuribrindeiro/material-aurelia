@@ -1,0 +1,13 @@
+<template>
+  <button rippler extending-binds class="btn ${type ? 'btn-' + type : ''} ${size ? 'btn-' + size : ''} 
+  ${iconOnly ? 'btn-fab' : ''} ${btnStyle ? 'btn-' + btnStyle : ''} ${disabled ? 'disabled' : ''}" type="button" disabled.bind="disabled">
+    <span if.bind="loading" class="spinner-border spinner-border-sm"></span>
+    <span if.bind="icon && iconDirectionLeft" class="btn-label btn-label-left">
+      <i class="material-icons">${icon}</i>
+    </span>
+    <slot></slot>
+    <span if.bind="icon && !iconDirectionLeft" class="btn-label btn-label-right">
+      <i class="material-icons">${icon}</i>
+    </span>
+  </button>
+</template>

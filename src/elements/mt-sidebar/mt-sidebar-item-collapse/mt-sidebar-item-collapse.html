@@ -1,0 +1,15 @@
+<template>
+  <li class="nav-item ${isRouteActive ? 'active' : ''}">
+    <a class="nav-link" data-toggle="collapse" href="#${collapseId}" aria-controls="${collapseId}">
+      <i class="material-icons" if.bind="icon">${icon}</i>
+      <p if.bind="text"> ${text}
+        <b class="caret"></b>
+      </p>
+    </a>
+    <div class="collapse" id="${collapseId}">
+      <ul class="nav">
+        <slot></slot>
+      </ul>
+    </div>
+  </li>
+</template>

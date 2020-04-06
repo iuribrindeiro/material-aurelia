@@ -1,0 +1,8 @@
+<template>
+  <li class="nav-item ${isRouteActive ? 'active' : ''}">
+    <a class="nav-link" href.bind="routeLink">
+      <span class="sidebar-mini" if.bind="icon">${icon}</span>
+      <span class="sidebar-normal">${text}</span>
+    </a>
+  </li>
+</template>

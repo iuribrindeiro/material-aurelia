@@ -1,0 +1,31 @@
+<template>
+  <div class="row">
+    <div class="col-md-6">
+      <label> <span style="padding-right: 3px;">Mostrar</span>
+        <select class="custom-select custom-select-sm form-control form-control-sm" style="width: auto" value.bind="pageSize">
+          <option repeat.for="page of pageSizes" model.bind="page">${page.label}</option>
+        </select> <span style="padding-left: 3px;">registros</span> 
+      </label>
+    </div>
+    <div class="col-md-6 text-right">
+      <label>
+        <mt-input value.two-way="searchText" placeholder.bind="searchTextLabel"></mt-input>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <slot></slot>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-5">
+      <label>Mostrando ${(currentPage * pageSize.size - (pageSize.size - 1))} até ${currentPage * pageSize.size} de ${totalItems} registros</label>
+    </div>
+    <div class="col-sm-12 col-md-7">
+      <mt-pagination current-page.bind="currentPage" custom-class="d-flex justify-content-end" total-pages-to-show.bind="pageSize.totalPagesToShow" total-items.bind="totalItems" items-per-page.bind="pageSize.size"></mt-pagination>
+    </div>
+  </div>
+</template>

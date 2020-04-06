@@ -1,0 +1,75 @@
+<template>
+  <mt-card>
+    
+    <mt-card-body>
+      <mt-container>
+        <div class="row">
+          <div class="col-md-6">
+            <mt-card-header>
+              <h4 mt-card-title>Pick your color</h4>
+            </mt-card-header>
+            <mt-card-body>
+              <mt-button>Default</mt-button>
+              <mt-button type="primary">Primary</mt-button>
+              <mt-button type="info">Info</mt-button>
+              <mt-button type="success">Success</mt-button>
+              <mt-button type="warning">Warning</mt-button>
+              <mt-button type="danger">Danger</mt-button>
+            </mt-card-body>
+          </div>
+          <div class="col-md-6">
+            <mt-card-header>
+              <h4 mt-card-title>Buttons with Icons</h4>
+            </mt-card-header>
+            <mt-card-body>
+              <mt-button icon="keyboard_arrow_left">Left</mt-button>
+              <mt-button icon="keyboard_arrow_right" icon-direction="right">Right</mt-button>
+              <mt-button icon="priority_high" type="info">Info</mt-button>
+              <mt-button icon="check" type="success">Success</mt-button>
+              <mt-button icon="warning" type="warning">Warning</mt-button>
+              <mt-button icon="close" type="danger">Danger</mt-button>
+            </mt-card-body>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <mt-card-header>
+              <h4 mt-card-title>Pick your Size</h4>
+            </mt-card-header>
+            <mt-card-body>
+              <mt-button type="primary" size="sm">small</mt-button>
+              <mt-button type="primary">regular</mt-button>
+              <mt-button type="primary" size="lg">large</mt-button>
+            </mt-card-body>
+          </div>
+          <div class="col-md-6">
+            <mt-card-header>
+              <h4 mt-card-title>Pick your Style</h4>
+            </mt-card-header>
+            <mt-card-body>
+              <mt-button type="primary">Default</mt-button>
+              <mt-button type="primary" btn-style="round">Round</mt-button>
+              <mt-button type="primary" btn-style="round" icon="favorite">With Icon</mt-button>
+              <mt-button title.bind="'Icon Only'" type="primary" btn-style="round" 
+                icon-only.bind="true" icon="favorite"></mt-button>
+              <mt-button type="primary" btn-style="link">simple</mt-button>
+            </mt-card-body>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <mt-card-header>
+              <h4 mt-card-title>Pagination</h4>
+            </mt-card-header>
+            <mt-card-body>
+              <nav>
+                <mt-pagination current-page.bind="currentPageExampleOne" enable-next-previous.bind="false" total-pages-to-show="5" total-items.bind="25" items-per-page.bind="5"></mt-pagination>
+                <mt-pagination current-page.bind="currentPageExampleTwo" total-items.bind="37" total-pages-to-show="3" items-per-page.bind="3"></mt-pagination>
+              </nav>
+            </mt-card-body>
+          </div>
+        </div>
+      </mt-container>
+    </mt-card-body>
+  </mt-card>
+</template>

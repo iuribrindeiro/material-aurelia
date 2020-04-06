@@ -1,0 +1,29 @@
+<template>
+  <mt-card>
+    <mt-card-header icon="assignment" color="rose">
+      <h4 mt-card-title>Extended Tables</h4>
+    </mt-card-header>
+    <mt-card-body>
+        <mt-table-container table-state.bind="tableState" page-sizes.bind="pageSizes" total-items.bind="totalItems" table-state-changed.delegate="tableStateChanged($event) & debounce:400">
+          <table mt-table aurelia-table="data.bind: users; display-data.bind: $displayData;">
+            <thead>
+              <tr>
+                <th as-element="mt-table-column" key="name">Name</th>
+                <th as-element="mt-table-column" key="age">Age</th>
+                <th as-element="mt-table-column" key="email">E-mail</th>
+                <th as-element="mt-table-column" key="subscribe">Active</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr repeat.for="user of $displayData">
+                  <td>${user.name}</td>
+                  <td>${user.age}</td>
+                  <td><a href="mailto:${user.email}">${user.email}</a></td>
+                  <td>${user.subscribe}</td>
+              </tr>
+            </tbody>
+          </table>
+        </mt-table-container>
+    </mt-card-body>
+  </mt-card>
+</template>

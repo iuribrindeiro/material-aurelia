@@ -1,0 +1,22 @@
+<template>
+  <div class="row">
+    <div class="col-md-6">
+      <form>
+        <mt-card>
+          <mt-card-header icon="mail_outline" color="rose">
+            <h4 mt-card-title>Register Form</h4>
+          </mt-card-header>
+          <mt-card-body>
+            <mt-input validation-errors.bind="user.emailErrors" label="Email *" value.two-way="user.email & validate"></mt-input>
+            <mt-input validation-errors.bind="user.passwordErrors" label="Password *" type.bind="'password'" value.two-way="user.password & validate"></mt-input>
+            <mt-input validation-errors.bind="user.confirmationPasswordErrors" label="Confirm Password *" type.bind="'password'" value.two-way="user.confirmationPassword & validate"></mt-input>
+          </mt-card-body>
+          <mt-card-footer custom-class="text-right">
+            <mt-checkbox checked.two-way="user.subscribe" label="Subscribe to newsletter"></mt-checkbox>
+            <mt-button disabled.bind="loading" loading.bind="loading" type="rose" click.delegate="save()">Register</mt-button>
+          </mt-card-footer>
+        </mt-card>
+      </form>
+    </div>
+  </div>
+</template>

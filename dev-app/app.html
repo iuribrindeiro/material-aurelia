@@ -1,0 +1,24 @@
+<template>
+  <mt-wrapper>
+    <mt-sidebar default-sidebar-size="expanded">
+      <mt-sidebar-item-link route-link="/" routerLinkActive="router-link-active"  text="Home Page" route-name="home" icon="dashboard"></mt-sidebar-item-link>
+      <mt-sidebar-item-collapse text="Componentes" root-route-name="componentes" icon="apps">
+        <mt-sidebar-item-collapse-link icon="B" route-link="/componentes/buttons" text="Buttons" route-name="buttons"></mt-sidebar-item-collapse-link>
+      </mt-sidebar-item-collapse>
+      <mt-sidebar-item-collapse text="Forms" root-route-name="forms" icon="content_paste">
+        <mt-sidebar-item-collapse-link icon="VF" route-link="/forms/validation-forms" text="Validation Forms" route-name="validation-forms"></mt-sidebar-item-collapse-link>
+      </mt-sidebar-item-collapse>
+      <mt-sidebar-item-collapse text="Tables" root-route-name="tables" icon="grid_on">
+        <mt-sidebar-item-collapse-link icon="ET" route-link="/tables/extended-tables" text="Extented Tables" route-name="extended-tables"></mt-sidebar-item-collapse-link>
+      </mt-sidebar-item-collapse>
+    </mt-sidebar>
+    <mt-main-panel>
+      <mt-navbar enable-toggle-sidebar.bind="true"></mt-navbar>
+      <mt-content>
+        <mt-container-fluid>
+          <router-view></router-view>
+        </mt-container-fluid>
+      </mt-content>
+    </mt-main-panel>
+  </mt-wrapper>
+</template>

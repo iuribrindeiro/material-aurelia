@@ -1,0 +1,73 @@
+{
+  "name": "mateiral-aurelia",
+  "description": "An Aurelia plugin project.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "???",
+    "url": "???"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "^10.11.6",
+    "aurelia-animator-css": "^1.0.4",
+    "aurelia-bootstrapper": "^2.3.2",
+    "aurelia-cli": "^1.2.3",
+    "aurelia-testing": "^1.0.0",
+    "aurelia-tools": "^2.0.0",
+    "autoprefixer": "^9.4.8",
+    "browser-sync": "^2.26.3",
+    "connect-history-api-fallback": "^1.6.0",
+    "cssnano": "^4.1.10",
+    "debounce": "^1.2.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-tslint": "^8.1.4",
+    "gulp-typescript": "^5.0.0",
+    "gulp-watch": "^5.0.1",
+    "minimatch": "^3.0.4",
+    "postcss-url": "^8.0.0",
+    "promise-polyfill": "^8.1.0",
+    "requirejs": "^2.3.6",
+    "text": "requirejs/text#latest",
+    "through2": "^3.0.0",
+    "tslint": "^5.13.0",
+    "typescript": "^3.1.2",
+    "vinyl-fs": "^3.0.3"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "build": "au build-plugin",
+    "build-demo": "au build",
+    "start": "au run",
+    "watch": "au build-plugin --watch",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "main": "dist/commonjs/index.js",
+  "module": "dist/native-modules/index.js",
+  "private": true,
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "au-table": "^0.1.14",
+    "aurelia-validation": "^2.0.0-rc1",
+    "guid-typescript": "^1.0.9",
+    "jquery": "^3.4.1",
+    "perfect-scrollbar": "^1.5.0",
+    "popper.js": "^1.16.1",
+    "sweetalert2": "^9.10.9"
+  }
+}

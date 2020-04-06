@@ -1,0 +1,46 @@
+<template>
+  <div class="sidebar" data-color="${color}" data-background-color="${backGroundColor}" ref="sidebar">
+    <div class="logo" if.bind="logoMiniText || logoNormalText">
+      <a href="#" class="simple-text logo-minie" if.bind="logoMiniText">
+        ${logoMiniText}
+      </a>
+      <a href="#" class="simple-text logo-normal" if.bind="logoNormalText">
+        ${logoNormalText}
+      </a>
+    </div>
+    <div class="sidebar-wrapper" ref="sidebarWrapper">
+      <div class="user" if.bind="userInfo">
+        <div class="photo" if.bind="userInfo.foto">
+          <img src="${userInfo.foto}">
+        </div>
+        <div class="user-info">
+          <a data-toggle="collapse" class="username" href="#collapseUserInfo">
+            <span>
+              ${userInfo.Nome}
+              <b class="caret"></b>
+            </span>
+          </a>
+          <div class="collapse" id="collapseUserInfo">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <span class="sidebar-mini"> P </span>
+                  <span class="sidebar-normal"> Perfil </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="sidebar-mini"> C </span>
+                  <span class="sidebar-normal"> Confirações </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <ul class="nav">
+        <slot></slot>
+      </ul>
+    </div>
+  </div>
+</template>

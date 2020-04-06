@@ -1,0 +1,27 @@
+<template>
+  <ul class="pagination ${customClass}">
+    <li class="page-item" if.bind="enableNextPrevious">
+      <a class="page-link ${isFirstPage ? 'disabled' : ''}" rippler click.delegate="firstPage()" title="Primeiro">
+        <span><i class="fa fa-angle-double-left"></i></span>
+      </a>
+    </li>
+    <li class="page-item" if.bind="enableNextPrevious">
+      <a class="page-link ${isFirstPage ? 'disabled' : ''}" rippler click.delegate="previousPage()" title="Anterior">
+        <span><i class="fa fa-angle-left"></i></span>
+      </a>
+    </li>
+    <li repeat.for="page of pages" class="page-item ${currentPage == page ? 'active' : ''}">
+      <a class="page-link" rippler click.delegate="changePage(page)">${page}</a>
+    </li>
+    <li class="page-item" if.bind="enableNextPrevious">
+      <a class="page-link ${isLastPage ? 'disabled' : ''}" rippler click.delegate="nextPage()" title="Próximo">
+        <span><i class="fa fa-angle-right" ></i></span>
+      </a>
+    </li>
+    <li class="page-item" if.bind="enableNextPrevious">
+      <a class="page-link ${isLastPage ? 'disabled' : ''}" rippler click.delegate="lastPage()" title="Último">
+        <span><i class="fa fa-angle-double-right" ></i></span>
+      </a>
+    </li>
+  </ul>
+</template>

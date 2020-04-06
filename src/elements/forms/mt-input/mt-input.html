@@ -1,0 +1,6 @@
+<template>
+  <div class="form-group bmd-form-group ${isFocused ? 'is-focused' : ''} ${isFilled && !isFocused ? 'is-filled' : ''}">
+    <label if.bind="label" class="bmd-label-floating">${label}</label>
+    <input ref="input" class="form-control" extending-binds>
+  </div>
+</template>

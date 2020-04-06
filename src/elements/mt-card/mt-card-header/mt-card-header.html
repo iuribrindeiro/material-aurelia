@@ -1,0 +1,8 @@
+<template>
+  <div slot="mt-card-header" class="card-header ${color ? 'card-header-'+color : ''} ${icon ? 'card-header-icon' : ''}">
+    <div if.bind="icon" class="card-icon">
+      <i class="material-icons">${icon}</i>
+    </div>
+    <slot></slot>
+  </div>
+</template>
