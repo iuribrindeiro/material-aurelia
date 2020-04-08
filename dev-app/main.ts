@@ -6,7 +6,7 @@ export function configure(aurelia: Aurelia) {
   aurelia.use
     .standardConfiguration()
     .developmentLogging()
-    .feature(PLATFORM.moduleName('material-aurelia'))
+    .plugin(PLATFORM.moduleName('material-aurelia'))
     .plugin(PLATFORM.moduleName('aurelia-validation'), (config: GlobalValidationConfiguration) => config.defaultValidationTrigger(validateTrigger.blur))
     .plugin(PLATFORM.moduleName('au-table'));
 
