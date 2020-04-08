@@ -5,7 +5,7 @@ export class Forms {
   configureRouter(config: RouterConfiguration, router: Router): void {
     config.map([
       { route: [''], redirect: 'validation-forms' },
-      { route: 'validation-forms', name: 'validation-forms', moduleId: './validation-forms/validation-forms', title:'Validation Forms' }
+      { route: 'validation-forms', name: 'validation-forms', moduleId: PLATFORM.moduleName('./validation-forms/validation-forms'), title:'Validation Forms' }
     ]);
   }
 }
