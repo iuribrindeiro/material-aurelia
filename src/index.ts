@@ -1,9 +1,7 @@
 import { PLATFORM } from 'aurelia-pal';
 import {FrameworkConfiguration} from 'aurelia-framework';
 
-import './base-material-dashboard/js/bootstrap-material-design.min.js';
 import './base-material-dashboard/styles/material-dashboard.css';
-import './base-material-dashboard/js/material-dashboard.js';
 
 export function configure(config: FrameworkConfiguration) {
   config.globalResources([
@@ -57,6 +55,9 @@ export function configure(config: FrameworkConfiguration) {
     PLATFORM.moduleName('./elements/mt-table/mt-table-column/mt-table-column')
   ]);
 }
+
+import './base-material-dashboard/js/bootstrap-material-design.min.js';
+import './base-material-dashboard/js/material-dashboard.js';
 
 export { TableState, ValueChanged, OrderingColumn } from './elements/mt-table/mt-table-container.js';
 export {CustomValidationControllerFactory} from './services/validation-controller-factory';
