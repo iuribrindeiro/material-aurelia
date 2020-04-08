@@ -24,6 +24,7 @@ jobs:
         mv package-lock.json build-prod/
         cd build-prod
         npm install
+        npm rename-package
         npm i --save github:iuribrindeiro/material-aurelia
         npm build-demo
 

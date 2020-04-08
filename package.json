@@ -45,6 +45,7 @@
     "defaults"
   ],
   "scripts": {
+    "rename-package": "json -I -f package.json -e 'this.name=\"material-aurelia-demo\"'",
     "build-demo": "webpack --env.production --extractCss",
     "build": "au build-plugin",
     "start": "au run",
@@ -66,6 +67,7 @@
     "aurelia-validation": "^2.0.0-rc1",
     "guid-typescript": "^1.0.9",
     "jquery": "^3.4.1",
+    "json": "^9.0.6",
     "perfect-scrollbar": "^1.5.0",
     "popper.js": "^1.16.1",
     "sweetalert2": "^9.10.9"
