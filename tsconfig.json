@@ -20,7 +20,7 @@
     "baseUrl": "src",
     "resolveJsonModule": true,
     "paths": {
-      "resources": [
+      "material-aurelia": [
         ""
       ]
     },

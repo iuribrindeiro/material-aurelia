@@ -1,7 +1,7 @@
 import { autoinject } from 'aurelia-framework';
 import { ValidationController } from 'aurelia-validation';
 import { UserModel } from '../../../models/user-model';
-import { CustomValidationControllerFactory } from 'resources';
+import { CustomValidationControllerFactory } from 'material-aurelia';
 import Swal from 'sweetalert2'
 
 @autoinject

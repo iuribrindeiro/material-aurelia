@@ -1,4 +1,4 @@
-import { TableState, PageSize, ValueChanged, OrderingColumn, Order } from 'resources';
+import { TableState, PageSize, ValueChanged, OrderingColumn, Order } from 'material-aurelia';
 import { UserModel } from "../../../models/user-model";
 
 export class ExtendedTables {

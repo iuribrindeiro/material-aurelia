@@ -3,7 +3,7 @@
   "type": "project:plugin",
   "paths": {
     "root": "dev-app",
-    "resources": "../src",
+    "material-aurelia": "../src",
     "elements": "../src/elements",
     "attributes": "../src/attributes",
     "valueConverters": "../src/value-converters",
