@@ -27,8 +27,6 @@
     "allowJs": true
   },
   "include": [
-    "./src/**/*.js",
-    "./src/**/*.scss",
     "./src/**/*.ts",
     "./dev-app/**/*.ts",
     "./test/**/*.ts",

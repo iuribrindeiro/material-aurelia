@@ -1,5 +1,5 @@
-import { EventAggregator, Subscription } from 'aurelia-event-aggregator';
-import { containerless, bindable, autoinject, observable } from 'aurelia-framework';
+import { EventAggregator } from 'aurelia-event-aggregator';
+import { containerless, bindable, autoinject } from 'aurelia-framework';
 
 @containerless
 @autoinject

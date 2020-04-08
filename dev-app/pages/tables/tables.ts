@@ -8,7 +8,7 @@ export class Componentes {
   public configureRouter(config: RouterConfiguration, router: Router) {
     config.map([
       { route: [''], redirect: 'extended-tables' },
-      { route: ['extended-tables'], name: 'extended-tables', moduleId: PLATFORM.moduleName('./extended-tables/extended-tables'), title: 'Extended Tables' },
+      { route: ['extended-tables'], name: 'extended-tables', moduleId: './extended-tables/extended-tables', title: 'Extended Tables' },
     ]);
   }
 }

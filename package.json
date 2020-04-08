@@ -45,8 +45,8 @@
     "defaults"
   ],
   "scripts": {
+    "build-demo": "webpack --env.production --extractCss",
     "build": "au build-plugin",
-    "build-demo": "au build",
     "start": "au run",
     "watch": "au build-plugin --watch",
     "prepare": "npm run build"

@@ -58,7 +58,7 @@ export function configure(config: FrameworkConfiguration) {
   ]);
 }
 
-export { TableState, ValueChanged, OrderingColumn } from 'elements/mt-table/mt-table-container.js';
+export { TableState, ValueChanged, OrderingColumn } from './elements/mt-table/mt-table-container.js';
 export {CustomValidationControllerFactory} from './services/validation-controller-factory';
 export { PageSize } from './elements/mt-table/mt-table-container';
 export { Order } from './elements/mt-table/mt-table-column/mt-table-column.js';

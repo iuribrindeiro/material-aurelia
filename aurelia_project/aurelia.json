@@ -17,14 +17,14 @@
     ],
     "source": [
       "dev-app/**/*.ts",
-      "src/**/*.ts",
-      "src/**/*.js"
+      "src/**/*.js",
+      "src/**/*.ts"
     ]
   },
   "plugin": {
     "source": {
       "js": ["src/**/*.ts", "src/**/*.js"],
-      "css": "src/**/*.scss",
+      "css": ["src/**/*.scss"],
       "html": "src/**/*.html",
       "json": "src/**/*.json"
     }

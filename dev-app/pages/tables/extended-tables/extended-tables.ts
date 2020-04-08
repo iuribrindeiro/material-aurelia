@@ -1,6 +1,4 @@
-import { PageSize } from 'resources';
-import { Order } from "resources";
-import { ValueChanged, OrderingColumn, TableState } from "resources";
+import { TableState, PageSize, ValueChanged, OrderingColumn, Order } from 'resources';
 import { UserModel } from "../../../models/user-model";
 
 export class ExtendedTables {
