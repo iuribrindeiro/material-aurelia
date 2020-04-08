@@ -98,6 +98,6 @@
     "aurelia-animator-css": "^1.0.4",
     "aurelia-bootstrapper": "^2.3.2",
     "aurelia-event-aggregator": "^1.0.3",
-    "aurelia-router": "^1.7.1",
+    "aurelia-router": "^1.7.1"
   }
 }
