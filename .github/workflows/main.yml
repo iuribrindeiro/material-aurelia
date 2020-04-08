@@ -23,10 +23,11 @@ jobs:
         mv package.json build-prod/
         mv package-lock.json build-prod/
         cd build-prod
+        npm install -g json
+        json -I -f package.json -e "this.name='material-aurelia-demo'"
         npm install
-        npm rename-package
-        npm i --save github:iuribrindeiro/material-aurelia
-        npm build-demo
+        npm i github:iuribrindeiro/material-aurelia
+        npm run build-demo
 
     # Fix timestamps
     - name: restore timestamps
