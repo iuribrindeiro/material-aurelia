@@ -1,5 +1,7 @@
 # `mateiral-aurelia`
 
+Live Demo: http://d319efyufg4qf3.cloudfront.net
+
 This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
 
 This Aurelia plugin project has a built-in dev app (with CLI built-in bundler and RequireJS) to simplify development.
@@ -87,13 +89,7 @@ By default, the `dist/` folder is not committed to git. (We have `/dist` in `.gi
 
 You can consume this plugin directly by:
 ```shell
-npm i github:your_github_username/mateiral-aurelia
-# or if you use bitbucket
-npm i bitbucket:your_github_username/mateiral-aurelia
-# or if you use gitlab
-npm i gitlab:your_github_username/mateiral-aurelia
-# or plain url
-npm i https:/github.com/your_github_username/mateiral-aurelia.git
+npm i github:iuribrindeiro/mateiral-aurelia
 ```
 
 Then load the plugin in app's `main.ts` like this.
