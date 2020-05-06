@@ -91,7 +91,7 @@
     "au-table": "^0.1.14",
     "aurelia-validation": "^2.0.0-rc1",
     "guid-typescript": "^1.0.9",
-    "jquery": "^3.5.0",
+    "jquery": "^3.4.1",
     "perfect-scrollbar": "^1.5.0",
     "popper.js": "^1.16.1",
     "sweetalert2": "^9.10.9",
